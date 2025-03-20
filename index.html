@@ -214,5 +214,18 @@
             </ul>
 <p> this<br> is<br> here<br> so<br> i<br> can<br> scroll<br> more<br></p>
 
+<button onclick="randomizeFunction()">Randomize</button>
+
+<p>your words is: </p>
+<p id="randomword"></p>
+
         </body>
     </html>
+    <script>
+        const myList = ["sunrise", "wait", "arrangement", "clue", "tradition", "monstrous"]
+        randomizeFunction()
+
+        function randomizeFunction() {
+            document.getElementById("randomWord").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+        }
+    </script>
