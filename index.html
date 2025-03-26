@@ -219,13 +219,15 @@
 <p>your words is: </p>
 <p id="randomword"></p>
 
-        </body>
-    </html>
-    <script>
+<script>
         const myList = ["sunrise", "wait", "arrangement", "clue", "tradition", "monstrous"]
         randomizeFunction()
 
         function randomizeFunction() {
-            document.getElementById("randomWord").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+            document.getElementById("randomword").innerHTML = myList[Math.floor(Math.random() * myList.length)]
         }
     </script>
+
+        </body>
+    </html>
+    
